@@ -43,8 +43,8 @@ func TestInstructionsString(t *testing.T) {
 	}
 
 	expected := `0000 OpAdd
-0003 OpConstant 2
-0006 OpConstant 65535
+0001 OpConstant 2
+0004 OpConstant 65535
 `
 	concatted := Instructions{}
 	for _, ins := range instructions {
@@ -83,4 +83,3 @@ func TestReadOperand(t *testing.T) {
 		}
 	}
 }
-
